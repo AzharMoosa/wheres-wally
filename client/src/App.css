@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Oswald", sans-serif;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.link {
+  text-decoration: none;
+  color: #000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home {
+  background-image: linear-gradient(
+    180deg,
+    #ff5050 30%,
+    #ffffff 30%,
+    #ffffff 50%,
+    #ff5050 50%,
+    #ff5050 80%,
+    #ffffff 80%,
+    #ffffff 100%
+  );
+  background-size: 400px 400px;
+  height: 100vh;
+}
+
+.home-container {
+  color: #fff;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.home-container h1 {
+  font-size: 75px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: absolute;
+  top: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-play {
+  background: #fff;
+  font-size: 45px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  border: none;
+  border-radius: 20px;
+  width: 272px;
+  height: 90px;
+  position: absolute;
+  top: 415px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-play:hover {
+  background: rgb(255, 246, 246);
+  transition: all ease-in-out 0.3s;
+}
+
+.home-container h3 {
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: absolute;
+  top: 630px;
 }
