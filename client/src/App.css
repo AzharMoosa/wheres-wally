@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
 
+:root {
+  --red: #ff5050;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -73,4 +77,55 @@ body {
   text-transform: uppercase;
   position: absolute;
   top: 630px;
+}
+
+/* Game */
+.game {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  background: var(--red);
+  width: 457px;
+  height: 100vh;
+}
+
+.characters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.character {
+  margin: 2rem 0;
+}
+
+.character img {
+  width: 202px;
+  height: 202px;
+}
+
+.character h3 {
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 0.4rem;
+  color: #fff;
+}
+
+.game-container {
+  width: 100%;
+}
+
+.time {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.time h3 {
+  font-size: 80px;
 }
