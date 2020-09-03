@@ -20,6 +20,15 @@ body {
   color: #000;
 }
 
+.link-home {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hidden {
+  display: none !important;
+}
+
 .home {
   background-image: linear-gradient(
     180deg,
@@ -82,19 +91,20 @@ body {
 /* Game */
 .game {
   display: flex;
+  flex-direction: column;
 }
 
 /* Sidebar */
 .sidebar {
   background: var(--red);
-  width: 457px;
-  height: 100vh;
+  width: 100vw;
 }
 
 .characters {
+  width: 70%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   text-align: center;
   margin: auto;
 }
@@ -123,9 +133,176 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
 }
 
 .time h3 {
   font-size: 80px;
+}
+
+/* Scene */
+
+.scene {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.scene img {
+  width: 95%;
+}
+
+.btns button {
+  background: rgb(48, 48, 48);
+  color: #fff;
+  outline: none;
+  border: none;
+  width: 60px;
+  padding: 0.6rem 0;
+  margin-left: 2rem;
+}
+
+.outline {
+  border: #ff00f2 5px dashed !important;
+}
+
+.oswald {
+  position: absolute;
+  top: 36%;
+  left: 14.5%;
+  z-index: 99;
+  background: transparent;
+  color: #fff;
+  width: 30px;
+  height: 70px;
+  outline: none;
+  border: none;
+}
+
+.wally {
+  position: absolute;
+  top: 39%;
+  left: 75%;
+  z-index: 99;
+  background: transparent;
+  color: #fff;
+  width: 35px;
+  height: 75px;
+  outline: none;
+  border: none;
+}
+
+.wenda {
+  position: absolute;
+  top: 45%;
+  left: 93%;
+  z-index: 99;
+  background: transparent;
+  color: #fff;
+  width: 35px;
+  height: 75px;
+  outline: none;
+  border: none;
+}
+
+.name-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.name-input input {
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  padding: 0.5rem;
+  border-color: rgb(48, 48, 48);
+  outline: none;
+}
+
+.name-input button {
+  font-family: "Oswald", sans-serif;
+  height: 50px;
+  width: 100px;
+  margin-left: 1rem;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  border-color: rgb(48, 48, 48);
+  background: rgb(48, 48, 48);
+  color: #fff;
+}
+
+.score-table {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.score-table-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-table-content h3 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.score-table-content h3:after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 1px;
+  border: 2px solid var(--red);
+  background-color: var(--red);
+  border-radius: 9px;
+  margin: 0.6rem auto;
+}
+
+.table {
+  width: 70%;
+  border: 1px solid #000;
+  margin-top: 1rem;
+}
+
+.table th {
+  padding: 0.5rem 0;
+}
+
+.table tbody {
+  text-align: center;
+  width: 100%;
+}
+
+.table td {
+  padding: 0.5rem 0;
+}
+
+.btn-home {
+  background: var(--red);
+  margin-top: 2rem;
+  height: 40px;
+  width: 150px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  border-radius: 13px;
 }

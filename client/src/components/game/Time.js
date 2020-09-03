@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
+import GameContext from "../../context/gameContext";
 import ReactTimerStopwatch from "react-stopwatch-timer";
 
 const Time = () => {
-  const fromTime = new Date(0, 0, 0, 0, 0, 0, 0);
+  const gameContext = useContext(GameContext);
+  const { game, time } = gameContext;
 
   return (
     <div className='time'>
-      <h3>
+      <h3 className='timer'>
         <ReactTimerStopwatch
-          isOn={true}
+          isOn={game}
           className='react-stopwatch-timer__table'
           watchType='stopwatch'
-          fromTime={fromTime}
+          displayHours={false}
+          fromTime={time}
         />
       </h3>
     </div>
