@@ -1,5 +1,4 @@
 import React, { useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
 import GameContext from "../../context/gameContext";
 import PlayerScore from "./PlayerScore";
 

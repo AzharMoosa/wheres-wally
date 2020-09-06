@@ -12,7 +12,6 @@
 
 body {
   font-family: "Oswald", sans-serif;
-  height: 100vh;
 }
 
 .link {
@@ -278,7 +277,7 @@ body {
 .table {
   width: 70%;
   border: 1px solid #000;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 .table th {
@@ -305,4 +304,254 @@ body {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
   border-radius: 13px;
+}
+
+@media (max-width: 1440px) {
+  .oswald {
+    top: 36%;
+    left: 14.5%;
+    width: 25px;
+    height: 60px;
+  }
+
+  .wally {
+    top: 39%;
+    left: 74.5%;
+    width: 30px;
+    height: 70px;
+  }
+
+  .wenda {
+    top: 45%;
+    left: 93%;
+    width: 30px;
+    height: 75px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .oswald {
+    top: 35%;
+    left: 14%;
+    width: 25px;
+    height: 55px;
+  }
+
+  .wally {
+    top: 38%;
+    left: 74%;
+    width: 30px;
+    height: 60px;
+  }
+
+  .wenda {
+    top: 44%;
+    left: 92.5%;
+    width: 30px;
+    height: 60px;
+  }
+
+  .character img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .oswald {
+    top: 35%;
+    left: 16%;
+    width: 18px;
+    height: 45px;
+  }
+
+  .wally {
+    top: 38%;
+    left: 73%;
+    width: 20px;
+    height: 40px;
+  }
+
+  .wenda {
+    top: 44%;
+    left: 90.5%;
+    width: 20px;
+    height: 40px;
+  }
+
+  .scene img {
+    width: 90%;
+  }
+
+  .time h3 {
+    font-size: 60px;
+  }
+
+  .outline {
+    border: #ff00f2 4px dashed !important;
+  }
+
+  .name-input input {
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .name-input button {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .home-container h1 {
+    font-size: 50px;
+    top: 220px;
+  }
+}
+
+@media (max-width: 414px) {
+  .oswald {
+    top: 35%;
+    left: 16%;
+    width: 10px;
+    height: 20px;
+  }
+
+  .wally {
+    top: 38%;
+    left: 73%;
+    width: 10px;
+    height: 20px;
+  }
+
+  .wenda {
+    top: 44%;
+    left: 90%;
+    width: 10px;
+    height: 20px;
+  }
+
+  .scene img {
+    width: 90%;
+  }
+
+  .time h3 {
+    font-size: 60px;
+  }
+
+  .outline {
+    border: #ff00f2 2px dashed !important;
+  }
+
+  .name-input input {
+    height: 40px;
+    width: 200px;
+    font-size: 15px;
+  }
+
+  .name-input button {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .character img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .character h3 {
+    font-size: 20px;
+  }
+
+  .time h3 {
+    font-size: 40px;
+  }
+
+  .home-container h1 {
+    font-size: 50px;
+    top: 155px;
+  }
+
+  .btn-play {
+    font-size: 30px;
+    width: 200px;
+    height: 70px;
+    top: 310px;
+  }
+
+  .home-container h3 {
+    font-size: 25px;
+    top: 475px;
+  }
+
+  .home {
+    background-size: 300px 300px;
+  }
+}
+
+@media (max-width: 320px) {
+  .oswald {
+    top: 35%;
+    left: 16%;
+    width: 6px;
+    height: 15px;
+  }
+
+  .wally {
+    top: 38%;
+    left: 73%;
+    width: 6px;
+    height: 15px;
+  }
+
+  .wenda {
+    top: 44%;
+    left: 90.5%;
+    width: 8px;
+    height: 15px;
+  }
+
+  .scene img {
+    width: 90%;
+  }
+
+  .time h3 {
+    font-size: 60px;
+  }
+
+  .outline {
+    border: #ff00f2 1px dashed !important;
+  }
+
+  .name-input input {
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+  }
+
+  .name-input button {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .character img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .character h3 {
+    font-size: 20px;
+  }
+
+  .time h3 {
+    font-size: 40px;
+  }
+
+  .home-container h1 {
+    font-size: 30px;
+    top: 175px;
+  }
+
+  .home-container h3 {
+    font-size: 20px;
+    top: 480px;
+  }
 }
