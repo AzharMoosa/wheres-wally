@@ -10,7 +10,6 @@ app.use(express.json({ extended: true }));
 connectDB();
 
 // Define Routes
-app.use("/api/game", require("./routes/game"));
 app.use("/api/player", require("./routes/player"));
 
 // Server static assests in production

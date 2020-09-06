@@ -14,7 +14,7 @@ const ScoreTable = ({ table }) => {
   return (
     <div className={`score-table ${!table ? "hidden" : ""}`}>
       <div className='score-table-content'>
-        <h3>High Score Table</h3>
+        <h3>Score Table</h3>
         <table className='table'>
           <thead>
             <tr>
